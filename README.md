@@ -20,6 +20,7 @@ keepalived/
     └── keepalived.conf
 ```
 
+### 需要注意的是这个配置文件权限必须是644，否则会报错：Configuration file '/data/conf/keepalived.conf' is not a regular non-executable file
 
 ##### 我用了三台主机搭建redis环境，属于三主互备份（双主配置，MASTER-BACKUP和BACKUP-MASTER;如果是多主，比如三主，就是MATER(A主机)-BACKUP(B主机)-BACKUP(C主机)、BACKUP-MASTER-BACKUP和BACKUP-BACKUP-MASTER）
 ##### !!!各主机的global_defs配置项下的router_id不能相同
